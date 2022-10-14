@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* *{
+  outline:1px solid yellowgreen;
+} */
+
+*{
+  font-family: 'GmarketSansMedium';
+  margin:0px;
+  padding:0px
+}
+
+body {
+  margin : 0;
+}
+
+.title {
+  text-transform:uppercase;
+  margin: 100px 0;
+}
+
+/* 메뉴 */
+
+#menuBar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  font-family: 'GmarketSansMedium';
+  box-shadow: 5px 0px 20px gainsboro;
+}
+
+#menuBar #name {
+  margin : 20px 0 20px 50px;
+}
+
+#menuBar #link {
+  margin : 20px 50px 20px 0;
+}
+
+#menuBar a {
+  text-decoration: none;
+  text-transform:uppercase;
+}
+
+#menuBar #name a {
+  font-weight: bold;
+  font-size: 14px;
+  color : black;
+}
+
+#menuBar #link a {
+  margin-left : 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color : black;
+  /* color : rgb(80, 80, 80); */
+}
+
+#menuBar #link a:hover {
+  background-color: gainsboro;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+/* 메인 */
+
+#contents #greeting{
+  margin-top:60px;
+}
+
+#contents #greeting video {
+  width: 100%;
+  /* height: 945px; */
+  object-fit: fill;
+}
+
+#contents .menu  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top:200px; */
+}
+
+#contents #introduction #profile {
+  display: flex;
+}
+
+#contents #introduction #profile {
+  display: flex;
+}
+
+#contents #introduction #profile img {
+  width: 300px;
+  height: 300px;
+}
+
+#contents #introduction #profile p {
+  width: 500px;
+}
+
+
+
+
