@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index2.css">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/038578f405.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <span class="name">Jinuk Kim</span>
+      <div style="clear:both"></div>
+    </nav>
+    <div class="sidebar">
+      <div class="sidebar-menu-box">
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-user"></i>
+          <span data-order="1">Introduce</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <span data-order="2">Skills</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-file"></i>
+          <span data-order="3">Portfolio</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-phone"></i>
+          <span data-order="4">Contact</span>
+        </div>
+      </div>
+    </div>
+    <section class="section1 visible">
+      <p class="section-title">[ about me ]</p>
+      <div class="profile-box">
+        <div class="profile-imgBox">
+          <img class="profile-img" src="./img/profile.jpg" alt="">
+        </div>
+        <div class="profile-text">
+          <p class="intro-title">안녕하세요 신입 개발자 김진욱입니다.</p>
+          <p class="intro-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero suscipit similique, assumenda dolorem hic, doloribus illo, natus nemo consequatur voluptas repellendus. Voluptas accusantium porro consectetur sequi tenetur commodi neque repellendus?</p>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <p class="section-title">[ skills ]</p>
+    </section>
+    <section class="section3">
+      <p class="section-title">[ portfolio ]</p>
+    </section>
+    <section class="section4">
+      <p class="section-title">[ contact ]</p>
+    </section>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script>
+      $('.sidebar-menu').on('click',function(e){
+        if(e.target.tagName == 'SPAN'){
+          $('section').removeClass('visible');
+          $(`.section${e.target.dataset.order}`).addClass('visible');
+        }
+      })
+    </script>
+  </div>
+</body>
+</html>
