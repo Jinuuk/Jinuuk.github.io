@@ -1,19 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>내 블로그</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/038578f405.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <h3>프로젝트</h3>
-  <ul>
-    <li><a href="/outputs/GREAT.pptx">프로젝트 산출물 PPT</a></li>
-    <li><a href="/outputs/GREAT.pdf">프로젝트 산출물 PDF</a></li>
-    <li><a href="https://github.com/Jinuuk/Project_GREAT">구현 소스</a></li>
-    <li><a href="https://youtu.be/PFDcnkVL-DI">전체 동영상</a></li>
-    <li><a href="https://youtu.be/NdCTiWg63Dc">개인 동영상</a></li>
-  </ul>
+  <div class="wrapper">
+    <nav class="navbar">
+      <span class="name">Jinuk Kim</span>
+      <div style="clear:both"></div>
+    </nav>
+    <div class="sidebar">
+      <div class="sidebar-menu-box">
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-user"></i>
+          <span data-order="1">About Me</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <span data-order="2">Skills</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-file"></i>
+          <span data-order="3">Portfolio</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-phone"></i>
+          <span data-order="4">Contact</span>
+        </div>
+      </div>
+    </div>
+    <section class="section1 visible">
+      <p class="section-title">about me</p>
+      <div class="profile-box">
+        <div class="profile-imgBox">
+          <img class="profile-img" src="./img/profile.jpg" alt="">
+        </div>
+        <div class="profile-text">
+          <p class="intro-title">안녕하세요 신입 개발자 김진욱입니다.</p>
+          <p class="intro-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero suscipit
+            similique, assumenda dolorem hic, doloribus illo, natus nemo consequatur voluptas repellendus. Voluptas
+            accusantium porro consectetur sequi tenetur commodi neque repellendus?</p>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <p class="section-title">skills</p>
+      <div class="skills-box">
+        <div class="skill">
+          <div class="skill-list-box">
+            <div class="skill-icon-box">
+              <div>
+                <img src="./img/javascript.svg" alt="" width="25%">
+                <img src="./img/css3.svg" alt="" width="25%">
+                <img src="./img/html5.svg" alt="" width="25%">
+              </div>
+              <div>
+                <img src="./img/jquery.svg" alt="" width="25%">
+                <img src="./img/react.svg" alt="" width="25%">
+                <img src="./img/bootstrap.svg" alt="" width="25%">
+              </div>
+            </div>
+            <p class="skill-list">#JavaScript #CSS #HTML<br>#jQuery #React #Bootstrap</p>
+          </div>
+          <p class="skill-title">Frontend</p>
+        </div>
+        <div class="skill">
+          <div class="skill-list-box">
+            <div class="skill-icon-box">
+              <div>
+                <img src="./img/java.svg" alt="" width="25%">
+                <img src="./img/thymeleaf.png" alt="" width="25%">
+              </div>
+              <div>
+                <img src="./img/oracle.svg" alt="" width="25%">
+                <img src="./img/springboot.png" alt="" width="25%">
+              </div>
+            </div>
+            <p class="skill-list">#Java #Thymeleaf #Oracle<br>#Spring Framework</p>
+          </div>
+          <p class="skill-title">Backend</p>
+        </div>
+        <div class="skill">
+          <div class="skill-list-box">
+            <div class="skill-icon-box">
+              <div>
+                <img src="./img/junit.png" alt="" width="25%">
+                <img src="./img/postman.svg" alt="" width="25%">
+              </div>
+              <div>
+                <img src="./img/git.svg" alt="" width="25%">
+                <img src="./img/github.svg" alt="" width="25%">
+              </div>
+            </div>
+            <p class="skill-list">#Junit5 #Postman<br>#Git #Github</p>
+          </div>
+          <p class="skill-title">Test & Version Control</p>
+        </div>
+        <div class="skill">
+          <div class="skill-list-box">
+            <div class="skill-icon-box">
+              <img src="./img/Visual_Studio_Code_icon.svg.png" alt="" width="25%">
+              <img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="" width="25%">
+            </div>
+            <p class="skill-list">#Vscode #IntelliJ</p>
+          </div>
+          <p class="skill-title">IDE / Tools</p>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <p class="section-title">portfolio</p>
+      <div class="slide-box">
+        <div class="slide-left-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="slide-right-btn">
+          <i class="fa-solid fas fa-chevron-right"></i>
+        </div>
+        <div style="clear:both"></div>
+        <div class="slide-container">
+          <div class="slide-content content1">
+            <div class="project-img">
+              <img src="./img/main.png" alt="" width="400px" height="350px">
+            </div>
+            <div class="project-description">
+              <div class="row">
+                <p style="width: 90px;">프로젝트명</p>
+                <span style="margin-right:20px">></span>
+                <p>GREAT</p>
+              </div>
+              <div class="row">
+                <p style="width: 90px;">개ㅤㅤ 요</p>
+                <span style="margin-right:20px">></span>
+                <p>마감할인 상품 거래 사이트</p>
+              </div>
+              <div class="row">
+                <p style="width: 90px;">참여 인원</p>
+                <span style="margin-right:20px">></span>
+                <p>5인</p>
+              </div>
+              <div class="row">
+                <p style="width: 90px;">담당 파트</p>
+                <span style="margin-right:20px">></span>
+                <p>커뮤니티 게시판 및 댓글</p>
+              </div>
+              <div class="row">
+                <p style="width: 90px;">관련 자료</p>
+                <span style="margin-right:20px">></span>
+                <p>자료1 자료2 자료3</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-content">slide2</div>
+          <div class="slide-content">slide3</div>
+        </div>
+      </div>
+      <div class="slide-btn-box">
+        <button class="slide-btn check" id="slide-btn1" data-slide="1"></button>
+        <button class="slide-btn" id="slide-btn2" data-slide="2"></button>
+        <button class="slide-btn" id="slide-btn3" data-slide="3"></button>
+      </div>
+    </section>
+    <section class="section4">
+      <p class="section-title">contact</p>
+      <div class="contact-box">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="contact-address">
+            <p class="contact-show">Github</p>
+            <p class="contact-hidden"><a href="https://github.com/jinuuk">https://github.com/jinuuk</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-address">
+            <p class="contact-show">E-mail</p>
+            <p class="contact-hidden">kuoniz@naver.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contact-address">
+            <p class="contact-show">Phone</p>
+            <p class="contact-hidden">010·3573·2484</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="scroll-box">
+      <span>
+        Scroll
+        <i class="fa-solid fas fas fa-chevron-circle-up"></i>
+        <i class="fa-solid fas fas fas fa-chevron-circle-down"></i>
+      </span>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+
+    // 사이드바 메뉴
+    $('.sidebar-menu').on('click', function (e) {
+      if (e.target.tagName == 'SPAN') {
+        $('section').removeClass('visible');
+        $(`.section${e.target.dataset.order}`).addClass('visible');
+      }
+    })
+
+    // 프로젝트 캐러셀
+    let slidePage = 0;
+
+    $('.slide-btn').on('click', function (e) {
+        $('.slide-btn').removeClass('check');
+        $(`#slide-btn${e.target.dataset.slide}`).addClass('check');
+        $('.slide-container').css('transform',`translateX(-${(e.target.dataset.slide - 1) * 1000}px)`);
+        slidePage = e.target.dataset.slide - 1;
+    })
+
+    $('.slide-left-btn').on('click', function () {
+      if (slidePage > 0 && slidePage <= 2) {
+        slidePage = slidePage - 1;
+        $('.slide-container').css('transform', `translateX(-${slidePage * 1000}px)`);
+        $('.slide-btn').removeClass('check');
+        $(`#slide-btn${slidePage + 1}`).addClass('check');
+      }
+    });
+    $('.slide-right-btn').on('click', function () {
+      if (slidePage >= 0 && slidePage < 2) {
+        slidePage = slidePage + 1;
+        $('.slide-container').css('transform', `translateX(-${slidePage * 1000}px)`);
+        $('.slide-btn').removeClass('check');
+        $(`#slide-btn${slidePage + 1}`).addClass('check');
+      }
+    });
+
+    // 마우스 휠로 페이지 변경
+    let sectionOrder = 1;
+    $(document).ready(function () {
+      $(window).on('mousewheel', function (e) {
+        if (e.originalEvent.deltaY < 0) {
+          if (sectionOrder > 1) {
+            sectionOrder--;
+            $('section').removeClass('visible');
+            $(`.section${sectionOrder}`).addClass('visible');
+          }
+        } else if (e.originalEvent.deltaY > 0) {
+          if (sectionOrder < 4) {
+            sectionOrder++;
+            $('section').removeClass('visible');
+            $(`.section${sectionOrder}`).addClass('visible');
+          }
+        }
+      })
+    });
+
+    // 스크롤 유도
+    setInterval(function(){
+      $('.scroll-box').fadeIn(800, function(){
+        $('.scroll-box').fadeOut(800)
+      })
+    },1600);
+
+  </script>
+  </div>
 </body>
+
 </html>
